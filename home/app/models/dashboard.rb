@@ -8,6 +8,6 @@ class Dashboard < ApplicationRecord
   validates :title, presence: true, length: { minimum: 5, maximum: 25 }
   validates :user, presence: true
   after_validation :corection_title
-  scope :ordered_by_title, -> { order(title: :asc) }
-
+  #scope :ordered_by_title, -> { order(title: :asc) }
+   scope :ordered_by_title, ->{ order(arel_table[:title].lower)}
 end

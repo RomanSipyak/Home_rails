@@ -36,4 +36,9 @@ RSpec.describe User, type: :model do
       expect(User.by_username('an')).to contain_exactly(user)
     end
   end
+  context 'Asociation' do
+    it { is_expected.to have_many(:memberships) }
+    it { is_expected.to have_many(:dashboards).dependent(:nullify) }
+    it { is_expected.to have_and_belong_to_many(:cards)}
+  end
 end

@@ -25,10 +25,17 @@ RSpec.describe Dashboard, type: :model do
     end
   end
   context 'scope' do
-    let(:dashboard) { create(:dashboard) }
-    let(:dashboard2) { create(:dashboard, title: 'AAaaaaa') }
+    let!(:dashboard) { create(:dashboard) }
+    let!(:dashboard2) { create(:dashboard, title: 'AAaaaaa') }
     it 'scope ordered_by_title' do
-      expect(Dashboard.ordered_by_title).to contain_exactly(dashboard2, dashboard)
+      expect(Dashboard.ordered_by_title[0]).to eq(dashboard2)
     end
+  end
+  context 'Asociating' do
+    it { is_expected.to belong_to(:user) }
+    it { is_expected.to have_many(:memberships) }
+    it { is_expected.to have_many(:users) }
+    it { is_expected.to have_many(:lists) }
+    it { is_expected.to have_many(:labels) }
   end
 end

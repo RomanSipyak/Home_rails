@@ -31,4 +31,8 @@ RSpec.describe List, type: :model do
       expect(list.title).to eq('Title title')
     end
   end
+  context 'Asociation' do
+    it { is_expected.to belong_to(:dashboard) }
+    it { is_expected.to have_many(:cards).dependent(:destroy) }
+  end
 end
