@@ -1,4 +1,6 @@
 class List < ApplicationRecord
-  belongs_to :list
-  validates :title, presence: true, length: { minimum: 5 }
+  include TitleConcern
+  has_many :cards, dependent: :destroy
+  belongs_to :dashboard , touch: true
+  validates :title, presence: true, length: { minimum: 5, maximum: 25}
 end

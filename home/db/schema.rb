@@ -10,15 +10,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_31_131938) do
+ActiveRecord::Schema.define(version: 2018_08_03_084307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attachments", force: :cascade do |t|
+    t.string "file_container_type"
+    t.bigint "file_container_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "file_date"
+    t.index ["file_container_type", "file_container_id"], name: "index_attachments_on_file_container_type_and_file_container_id"
+  end
+
+  create_table "cards", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "date"
+    t.integer "list_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "complitely_date"
+    t.integer "comments_count"
+  end
+
+  create_table "cards_labels", id: false, force: :cascade do |t|
+    t.bigint "card_id", null: false
+    t.bigint "label_id", null: false
+    t.index ["card_id", "label_id"], name: "index_cards_labels_on_card_id_and_label_id"
+  end
+
+  create_table "cards_users", id: false, force: :cascade do |t|
+    t.bigint "card_id", null: false
+    t.bigint "user_id", null: false
+    t.index ["card_id", "user_id"], name: "index_cards_users_on_card_id_and_user_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "card_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "dashboards", force: :cascade do |t|
     t.string "title"
     t.boolean "visions"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "labels", force: :cascade do |t|
+    t.string "color"
+    t.string "name"
+    t.integer "dashboard_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,7 +87,7 @@ ActiveRecord::Schema.define(version: 2018_07_31_131938) do
     t.string "email"
     t.string "password"
     t.string "username"
-    t.string "avatar"
+    t.text "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
