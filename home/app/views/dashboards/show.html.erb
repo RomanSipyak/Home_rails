@@ -1,0 +1,47 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="cotainer-fluid">
+  <h1>Dashboards#show</h1>
+  <p>Find me in app/views/dashboards/show.html.erb</p>
+  <div class="header-h1">
+    <h1>Your dasboard: <%= @dashboard.title %></h1>
+  </div>
+  <% @dashboard.lists.each do |list| %>
+    <div class = "column card-bloc well " data-toggle="collapse" data-target="#anchor<%=  list.id%>" ><%= list.title %>
+      <div id="anchor<%=list.id%>" class="collapse">
+        <div class="btn-group row">
+          <%= link_to list_path(list), data: {:confirm => 'Are you sure?'}, :method => :delete do %>
+            <button type="button" class="btn btn-warning btn-xs">
+              Destroy
+            </button>
+          <% end %>
+          <%= link_to edit_list_path(list),  remote: true do %>
+            <button type="button" class="btn btn-primary btn-xs">
+              Update
+            </button>
+          <% end %>
+        </div>
+        <div class="row" style="margin-top: 3px">
+          <%= link_to list_path(list) do %>
+            <button type="button" class="btn btn-success btn-xs ">
+              Go to List
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <!-- Trigger the modal with a button -->
+  <%= link_to new_list_path(dashboard_id: @dashboard.id), remote: true do %>
+   <button type="button" class="btn btn-info col-2 btn-sm" style="margin-top:15px">
+    <span class="glyphicon glyphicon-plus  ">Add list</span>
+   </button>
+  <%end%>
+
+
+</div>
+

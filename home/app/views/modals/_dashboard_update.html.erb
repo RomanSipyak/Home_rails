@@ -1,0 +1,25 @@
+<div class="modal fade" id="myModal_update" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add dasboard</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for dashboard, html: {class: 'nifty_form'} do |f| %>
+          <div class="form-group">
+            <label for="usr">Name:</label>
+            <%= f.text_field :title %><br>
+            <label for="usr">Vision:</label>
+            <%= f.check_box :visions %>
+          </div>
+          <%= f.submit 'Update or create' %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
