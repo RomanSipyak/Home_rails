@@ -1,4 +1,4 @@
-$('body').append("<%= escape_javascript(render '/modals/dashboard_update', dashboard: @dashboard) %>")
+$('body').append("<%= escape_javascript(render 'dashboard_update', dashboard: @dashboard) %>")
 $('#myModal_update').modal("show");
 $('#myModal_update').on('hidden.bs.modal', function(){
   $('#myModal_update').remove();

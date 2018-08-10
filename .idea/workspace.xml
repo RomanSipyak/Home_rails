@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcafd1e7-a314-4f36-bf88-c3e22905dca3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/home/app/views/modals/_dashboard_update.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/app/views/modals/_list_update.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/home/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/home/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/models/comment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/models/dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/db/migrate/20180731120606_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/db/migrate/20180731120606_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/factories/users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/factories/users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/card_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/card_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/comment_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/comment_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/dashboard_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/dashboard_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/label_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/label_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/list_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/list_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/models/user_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/home/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/dashboards/new.js.erb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/dashboards/new.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/app/views/modals/_dashboard_update.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/home/app/views/dashboards/_dashboard_update.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,16 +43,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="create.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/app/views/lists/create.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="_dashboard_update.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/app/views/modals/_dashboard_update.html.erb">
+        <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/_dashboard_update.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.js.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/new.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -87,20 +70,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lists_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/app/controllers/lists_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="45">
               <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.js.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="edit.js.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="72" selection-start-column="56" selection-end-column="72" />
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -137,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home/spec/support/factory_bot.rb" />
         <option value="$PROJECT_DIR$/home/spec/factories/dashboards.rb" />
         <option value="$PROJECT_DIR$/home/spec/factories/comments.rb" />
         <option value="$PROJECT_DIR$/home/app/models/label.rb" />
@@ -182,12 +164,13 @@
         <option value="$PROJECT_DIR$/home/app/views/modals/_list_udate.html.erb" />
         <option value="$PROJECT_DIR$/home/app/views/modals/_dashboard_update.html.erb" />
         <option value="$PROJECT_DIR$/home/app/views/lists/edit.html.erb" />
-        <option value="$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb" />
         <option value="$PROJECT_DIR$/home/app/views/dashboards/show.html.erb" />
         <option value="$PROJECT_DIR$/home/app/views/lists/new.js.erb" />
         <option value="$PROJECT_DIR$/home/app/views/lists/edit.js.erb" />
         <option value="$PROJECT_DIR$/home/app/views/modals/_list_update.html.erb" />
         <option value="$PROJECT_DIR$/home/app/controllers/lists_controller.rb" />
+        <option value="$PROJECT_DIR$/home/app/views/dashboards/new.js.erb" />
+        <option value="$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb" />
       </list>
     </option>
   </component>
@@ -294,31 +277,6 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="modals" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Rails_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rails_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rails_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rails_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rails_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rails_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rails_home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rails_home" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -376,12 +334,12 @@
       <workItem from="1533721128759" duration="15546000" />
       <workItem from="1533812990450" duration="11996000" />
       <workItem from="1533838647661" duration="20000" />
-      <workItem from="1533895027240" duration="13367000" />
+      <workItem from="1533895027240" duration="13441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162710000" />
+    <option name="totallyTimeSpent" value="162784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -599,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/new.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/views/lists/new.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -616,24 +567,10 @@
     <entry file="file://$PROJECT_DIR$/home/app/views/lists/create.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="52" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="72" selection-start-column="56" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/app/views/modals/_dashboard_update.html.erb">
+    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/_dashboard_update.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
@@ -666,8 +603,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/app/controllers/lists_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="45">
           <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/new.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/app/views/dashboards/edit.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
         </state>
       </provider>
     </entry>

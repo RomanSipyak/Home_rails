@@ -1,4 +1,4 @@
-$('body').append("<%= escape_javascript(render '/modals/list_update', list: @list) %>")
+$('body').append("<%= escape_javascript(render 'list_update', list: @list) %>")
 $('#myModal_update').modal("show");
 $('#myModal_update').on('hidden.bs.modal', function(){
 $('#myModal_update').remove();
