@@ -14,8 +14,8 @@ class ListsController < ApplicationController
   end
 
   def update
-    @dashboard = List.find(params[:id])
-    @dashboard.update(list_params)
+    @lst = List.find(params[:id])
+    @list.update(list_params)
     redirect_to dashboard_path(params[:list][:dashboard_id])
   end
 

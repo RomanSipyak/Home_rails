@@ -1,0 +1,6 @@
+$('body').append("<%= escape_javascript(render 'card_update', card: @card) %>")
+$('#myModal_update').modal("show");
+$('#myModal_update').on('hidden.bs.modal', function () {
+
+    $('#myModal_update').remove();
+})

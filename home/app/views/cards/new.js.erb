@@ -1,0 +1,24 @@
+$('body').append("<%= escape_javascript(render 'card_update' , card: @card) %>")
+$('#myModal_update').modal("show");
+$('#myModal_update').on('hidden.bs.modal', function () {
+
+
+    jQuery('#availability_calender').datetimepicker({
+        formatDate: "d.m.Y",
+        inline: true,
+        timepicker: false,
+        highlightedDates: [
+            "29.02.2016,Meeting with Pete",
+            "24.02.2016,Christmas Eve,xdsoft_highlighted_mint",
+            "25.02.2016,Christmas Day,xdsoft_highlighted_mint",
+            "26.02.2016,Thanksgiving"
+        ],
+        highlightedPeriods: [
+            "27.04.2015,08.05.2015,Business trip",
+            "11.07.2015,31.08.2015,Summer holiday 2015,xdsoft_highlighted_mint",
+            "21.12.2015,01.01.2016,Christmas holiday 2015"
+        ]
+    });
+
+    $('#myModal_update').remove();
+})
